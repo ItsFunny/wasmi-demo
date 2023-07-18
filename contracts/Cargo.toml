@@ -10,7 +10,7 @@ crate-type = ["cdylib", "rlib"]
 [dependencies]
 #zkdex_wasm={path="/Users/lvcong/rust/zkdex-wasm-poc/core/lib/zkdex",features=["zkwasm"]}
 wasm-bindgen = "0.2.87"
-zkwasm-rust-sdk = { path="/Users/lvcong/rust/zkWasm-rust" }
+zkwasm-rust-sdk = {git = "https://github.com/DelphinusLab/zkWasm-rust.git" , optional = true }
 #utils={path="/Users/lvcong/rust/zkdex-wasm-poc/core/lib/utils"}
 primitive-types = {version="0.12.1", default-features = false, features=["num-traits"]}
 #getrandom = { version = "0.2", features = ["js"] }
